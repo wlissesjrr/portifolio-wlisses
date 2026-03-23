@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Wlisses Junior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho com menu visível -->
+  <header>
+    <div class="container topo">
+      <h1>Wlisses Junior</h1>
+      <nav>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="temaBtn">Tema</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>
+          Meu nome é Wlisses Junior e sou um estudante da faculdade uninter do curso de análise e desenvolvimento de sistemas.
+          encontrei uma grande curiosidade e apego pela área de programação e busco me aprimorar e ser um bom profissional.
+          levo uma vida muito ativa entre trabalho, cursos e esportes e acho que isso é oque mais me define e motiva.
+          busco sempre aprimorar minhas soft skills por meio da leitura, estudos e networking.
+          sempre tive uma boa adaptabilibade e me desenvolvo bem em várias áreas, trabalho bem com equipes ou sozinho.
+        </p>
+        <p>
+          Entre meus hobbies estão tecnologia, leitura e qualquer tipo de arte, a arte sempre me fascinou assim como as biografias das grandes mentes que contribuíram para a evolução de nosso mundo.
+           Meu objetivo é sempre me desenvolver e aprimorar para me tornar um grande nome com relevância nas áreas que me dedicar
+          como programador e criar projetos cada vez melhores.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao" class="secao destaque">
+      <div class="container">
+        <h2>Formação</h2>
+        <ul>
+          <li>Tecnólogo em Análise e Desenvolvimento de Sistemas - Em andamento</li>
+          <li>Curso básico de lógica de programação</li>
+          <li>Curso introdutório de HTML, CSS e JavaScript</li>
+          <li>curso de c#</li>
+          <li>curso de inglês KNN</li>
+          <li>Idioma: Português nativo</li>
+          <li>Idioma: Inglês fluente</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="secao">
+      <div class="container">
+        <h2>Portfólio</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Projeto 1 - Página de apresentação</h3>
+            <p>Site simples desenvolvido com HTML e CSS para treinar estrutura e layout.</p>
+            <a href="https://github.com/wlissesjrr/FIRST-PROJECT/commit/a3230962cf245debfe0bd9e6f016c544e11493e5" target="_blank">Ver projeto</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao destaque">
+      <div class="container">
+        <h2>Contato</h2>
+
+        <form id="formContato">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensagemRetorno"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 - Wlisses Junior | Portfólio Pessoal</p>
+      <p>email:</p>
+      <a href="wlissescord.jr@gmail.com">enviar e-mail</ahref></a>
+      
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

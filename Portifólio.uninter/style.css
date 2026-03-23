@@ -1,0 +1,189 @@
+style.css
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Rolagem lenta ao clicar no menu */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Tema escuro */
+body.escuro {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.escuro .secao,
+body.escuro .card,
+body.escuro header,
+body.escuro footer,
+body.escuro .destaque {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+body.escuro a {
+  color: #9ecbff;
+}
+
+/* Estrutura */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#temaBtn {
+  padding: 8px 14px;
+  border: none;
+  background-color: white;
+  color: #222;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.secao {
+  padding: 60px 0;
+}
+
+.destaque {
+  background-color: #e9e9e9;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+p, li {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Cards do portfólio */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, form button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+#mensagemRetorno {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+  }};
